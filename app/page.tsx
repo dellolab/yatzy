@@ -28,7 +28,7 @@ export default function YahtzeeGame() {
       fullHouse: null,
       smallStraight: null,
       largeStraight: null,
-      yahtzee: null,
+      yatzy: null,
       chance: null,
     },
     {
@@ -43,7 +43,7 @@ export default function YahtzeeGame() {
       fullHouse: null,
       smallStraight: null,
       largeStraight: null,
-      yahtzee: null,
+      yatzy: null,
       chance: null,
     },
   ]);
@@ -179,7 +179,7 @@ export default function YahtzeeGame() {
         fullHouse: null,
         smallStraight: null,
         largeStraight: null,
-        yahtzee: null,
+        yatzy: null,
         chance: null,
       },
       {
@@ -194,7 +194,7 @@ export default function YahtzeeGame() {
         fullHouse: null,
         smallStraight: null,
         largeStraight: null,
-        yahtzee: null,
+        yatzy: null,
         chance: null,
       },
     ]);
