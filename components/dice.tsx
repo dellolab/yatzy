@@ -1,13 +1,13 @@
-"use client";
+"use client"
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 interface DiceProps {
-  value: number;
-  held: boolean;
-  rolling: boolean;
-  onClick: () => void;
-  disabled: boolean;
+  value: number
+  held: boolean
+  rolling: boolean
+  onClick: () => void
+  disabled: boolean
 }
 
 export function Dice({ value, held, rolling, onClick, disabled }: DiceProps) {
@@ -17,18 +17,11 @@ export function Dice({ value, held, rolling, onClick, disabled }: DiceProps) {
         "w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center cursor-pointer select-none shadow-md relative",
         held ? "bg-green-100 dark:bg-green-900" : "bg-white dark:bg-gray-800",
         rolling ? "animate-dice-roll" : "",
-        disabled
-          ? "cursor-not-allowed opacity-70"
-          : "hover:shadow-lg transition-shadow"
+        disabled ? "cursor-not-allowed opacity-70" : "hover:shadow-lg transition-shadow",
       )}
       onClick={disabled ? undefined : onClick}
     >
-      <div
-        className={cn(
-          "transition-all duration-300 w-full h-full",
-          rolling ? "opacity-0" : "opacity-100"
-        )}
-      >
+      <div className={cn("transition-all duration-300 w-full h-full", rolling ? "opacity-0" : "opacity-100")}>
         {value === 1 && (
           <div className="grid grid-cols-1 grid-rows-1 w-full h-full p-4">
             <div className="flex items-center justify-center">
@@ -168,5 +161,5 @@ export function Dice({ value, held, rolling, onClick, disabled }: DiceProps) {
         </div>
       )}
     </div>
-  );
+  )
 }

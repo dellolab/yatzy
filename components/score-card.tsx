@@ -78,7 +78,7 @@ export function ScoreCard({
           ? 40
           : 0;
       }
-      case "yatzy":
+      case "yahtzee":
         return counts.some((count) => count === 5) ? 50 : 0;
       case "chance":
         return diceValues.reduce((sum, val) => sum + val, 0);
@@ -99,7 +99,7 @@ export function ScoreCard({
     { id: "fullHouse", label: "Full House" },
     { id: "smallStraight", label: "Small Straight" },
     { id: "largeStraight", label: "Large Straight" },
-    { id: "yahtzee", label: "Yahtzee" },
+    { id: "yahtzee", label: "Yatzy" },
     { id: "chance", label: "Chance" },
   ];
 
